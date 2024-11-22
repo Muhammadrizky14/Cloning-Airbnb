@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Heading -->
+    <link rel="image_src" href="./assets/img/logo.png">
+    <link rel="icon" href="./assets/img/logo.png" type="image/gif" sizes="16x16">
+    <title>Clone | Airbnb: Sewa Liburan, Kabin, Rumah Pantai, Rumah dan Pengalaman Unik</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive_index.css">
+    <link rel="stylesheet" href="./assets/css/calendar.css">
+</head>
+<body>
+    
+    <div class="app">
+        <div class="covid-noti-wrap">
+            <a href="./covider.html" target="popup" class="covid-noti-link">
+                Dapatkan informasi terkini mengenai respons kami terhadap Kenyamanan pengguna.
+            </a>
+        </div>
+        <header>
+            <div class="header-img" style="background-image: url(./assets/img/home-01.png);">
+                <div class="overlay hide">
+                    <div class="navbar">
+                        <a href="./index.html" class="navbar-logo">
+                            <img class="navbar-logo-img" src="./assets/img/logo-white.png" alt="">
+                            <span>airbnb</span>
+                        </a>
+                        <ul class="navbar-exp">
+                            <li><div class="navbar-exp-link active">Tempat Tinggal</div></li>
+                            <li><div class="navbar-exp-link">Pengalaman</div></li>   
+                        </ul>
+                        <a class="navbar-user">
+                            <div class="navbar-user-register"><span>
+                                Jadikan tempat Anda Airbnb</span></div>
+                            <div class="navbar-user-language"><i class="fas fa-globe"></i></div>
+                            <div class="navbar-user-login">
+                                <div class="navbar-user-bar"><i class="fas fa-bars"></i></div>
+                                <img class="navbar-user-login-avatar" src="./assets/img/home-02-avatar.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="navbar-user-list">
+                            <li class="navbar-user-item"><a class="navbar-user-link" href="#">Daftar</a></li>
+                            <li class="navbar-user-item"><a class="navbar-user-link" href="#">Masuk</a></li>
+                            <li class="navbar-user-item"><a class="navbar-user-link" href="#">Sewa Rumah</a></li>
+                            <li class="navbar-user-item"><a class="navbar-user-link" href="#">Tanggung Jawab Kami</a></li>
+                            <li class="navbar-user-item"><a class="navbar-user-link" href="#">Bantuan</a></li>
+                        </ul>
+                        <div class="nav-search-bar">
+                            <div class="nav-search-header-wrap disabled">
+                                <span class="nav-search-header-heading">Mulai Mencari</span>
+                                <div class="nav-search-header-btn">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="nav-search-header-mobile-wrap disabled">
+                                <div class="nav-search-header-mobile-searching-wrap">
+                                    <div class="nav-search-header-mobile-searching">
+                                        <i class="fas fa-search"></i>
+                                        <input placeholder="Anda akan pergi ke mana?">
+                                    </div>
+                                </div>
+                                <div class="nav-search-header-mobile-cancel">
+                                    Membatalkan
+                                </div>
+                                <div class="nav-search-mobile-place-wrap">
+                                    <span class="nav-search-mobile-place-heading">KAPAN SAJA, DI MANA SAJA</span>
+                                    <div class="nav-search-mobile-place-option">
+                                        <input type="button" value="Tugu Jogja">
+                                        <input type="button" value="Malioboro">
+                                        <input type="button" value="Titik 0 KM Jogja">
+                                    </div>
+                                    <a class="nav-search-mobile-place-btn">
+                                        <span>Pencarian Fleksibel</span>
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nav-search-wrap">
+                                <div class="nav-search-text" style="flex-grow: 2;">
+                                    <h5 class="nav-search-heading">Lokasi</h5>
+                                    <input class="nav-search-input" type="text" placeholder="Anda akan pergi ke mana?">
+                                </div>
+                                <div class="nav-search-place-wrap disabled">
+                                    <span class="nav-search-place-heading">KAPAN SAJA, DI MANA SAJA</span>
+                                    <div class="nav-search-place-option">
+                                        <input type="button" value="Tugu Jogja">
+                                        <input type="button" value="Malioboro">
+                                        <input type="button" value="Titik 0 KM Jogja">
+                                    </div>
+                                    <a class="nav-search-place-btn gradient-text">
+                                        <span>Pencarian Fleksibel</span>
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div class="nav-search-text" data-index="0" style="flex-grow: 1;">
+                                    <h5 class="nav-search-heading">Check-in</h5>
+                                    <p class="nav-search-description">Tambahkan tanggal</p>
+                                </div>
+                                <div class="nav-search-text" data-index="0" style="flex-grow: 1;">
+                                    <h5 class="nav-search-heading">Check-out</h5>
+                                    <p class="nav-search-description">Tambahkan tanggal</p>
+                                </div>
+                                <div class="nav-search-text disabled" data-index="2" style="flex-grow: 2;">
+                                    <h5 class="nav-search-heading">Tanggal Fleksibel</h5>
+                                    <p class="nav-search-description">Tambahkan tanggal</p>
+                                </div>
+                                <div class="nav-search-date-wrap disabled">
+                                    <div class="nav-search-option">
+                                        <div class="nav-search-option-text active">Kalender</div>
+                                        <div class="nav-search-option-text">Tanggal Fleksibel</div>
+                                    </div>
+                                    <div class="nav-search-calendar">
+                                        <div class="calendar">
+                                            <div class="calendar-header">
+                                                <span class="month-change" id="prev-month">
+                                                    <pre><</pre>
+                                                </span>
+                                                <div>
+                                                    <span id="month"></span>
+                                                    <span id="year"></span>
+                                                </div>
+                                                <span class="month-change" id="next-month">
+                                                    <pre>></pre>
+                                                </span>
+                                            </div>
+                                            <div class="calendar-body">
+                                                <div class="calendar-week-day">
+                                                    <div>Sen</div>
+                                                    <div>Sel</div>
+                                                    <div>Rab</div>
+                                                    <div>Kam</div>
+                                                    <div>Jum</div>
+                                                    <div>Sab</div>
+                                                    <div>Min</div>
+                                                </div>
+                                                <div class="calendar-days">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-search-flexible disabled">
+                                        <p class="nav-search-flexible-how-long-heading">Berapa lama Anda ingin menginap?</p>
+                                        <div class="nav-search-flexible-how-long">
+                                            <input class="checked" type="button" name="how-long" value="Akhir Pekan">
+                                            <input type="button" name="how-long" value="1 Minggu">
+                                            <input type="button" name="how-long" value="1 Bulan">
+                                        </div>
+                                        <p class="nav-search-flexible-when-heading">Kapan Anda ingin pergi?</p>
+                                        <div class="nav-search-flexible-when">
+                                            <div class="nav-search-flexible-when-month checked" name="7">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar-check"></i>
+                                                </div>
+                                                <span>Bulan Juli</span>
+                                            </div>
+                                            <div class="nav-search-flexible-when-month" name="8">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar"></i>
+                                                </div>
+                                                <span>Bulan Agustus</span>
+                                            </div>
+                                            <div class="nav-search-flexible-when-month" name="9">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar"></i>
+                                                </div>
+                                                <span>Bulan September</span>
+                                            </div>
+                                            <div class="nav-search-flexible-when-month" name="10">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar"></i>
+                                                </div>
+                                                <span>Bulan Oktober</span>
+                                            </div>
+                                            <div class="nav-search-flexible-when-month" name="11">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar"></i>
+                                                </div>
+                                                <span>Bulan November</span>
+                                            </div>
+                                            <div class="nav-search-flexible-when-month" name="12">
+                                                <div class="nav-search-flexible-when-month-icon">
+                                                    <i class="far fa-calendar"></i>
+                                                </div>
+                                                <span>Bulan Desember</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-guest-wrap disabled">
+                                    <div class="nav-search-guest-item">
+                                        <div class="nav-search-guest-text">
+                                            <h5 class="nav-search-guest-heading">Dewasa</h5>
+                                            <p class="nav-search-guest-description">13 tahun ke atas</p>
+                                        </div>
+                                        <div class="nav-search-guest-btn">
+                                            <button class="nav-search-guest-minus">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input class="nav-search-guest-value" value="0" name="16">
+                                            <button class="nav-search-guest-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="nav-search-guest-item">
+                                        <div class="nav-search-guest-text">
+                                            <h5 class="nav-search-guest-heading">Anak-anak</h5>
+                                            <p class="nav-search-guest-description">Usia 2 - 12 tahun</p>
+                                        </div>
+                                        <div class="nav-search-guest-btn">
+                                            <button class="nav-search-guest-minus">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input class="nav-search-guest-value" value="0" name="5">
+                                            <button class="nav-search-guest-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nav-search-guest-item">
+                                        <div class="nav-search-guest-text">
+                                            <h5 class="nav-search-guest-heading">Bayi</h5>
+                                            <p class="nav-search-guest-description">Di bawah 2 tahun</p>
+                                        </div>
+                                        <div class="nav-search-guest-btn">
+                                            <button class="nav-search-guest-minus">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input class="nav-search-guest-value" value="0" name="5">
+                                            <button class="nav-search-guest-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="nav-search-date-2-wrap disabled"> // pengalaman
+                                        <div class="nav-search-calendar-2">
+                                            <div class="calendar">
+                                                <div class="calendar-header">
+                                                    <span class="month-change" id="prev-month2">
+                                                        <pre><</pre>
+                                                    </span>
+                                                    <div>
+                                                        <span id="month2"></span>
+                                                        <span id="year2"></span>
+                                                    </div>
+                                                    <span class="month-change" id="next-month2">
+                                                        <pre>></pre>
+                                                    </span>
+                                                </div>
+                                                <div class="calendar-body">
+                                                    <div class="calendar-week-day">
+                                                        <div>Sen</div>
+                                                        <div>Sel</div>
+                                                        <div>Rab</div>
+                                                        <div>Kam</div>
+                                                        <div>Jum</div>
+                                                        <div>Sab</div>
+                                                        <div>Min</div>
+                                                    </div>
+                                                    <div class="calendar-days">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <input type="date" name="come-in">
+                                            <input type="date" name="come-out"> -->
+                                        </div>
+                                    </div>
+                                    <div class="nav-search-text" style="flex-grow: 1;">
+                                        <div data-index="0">
+                                            <h5 class="nav-search-heading">Tamu</h5>
+                                            <p class="nav-search-description nav-search-number-guest">Tambahkan tamu</p>
+                                        </div>
+                                        <div class="disabled" data-index="1">
+                                            <h5 class="nav-search-heading">Tanggal</h5>
+                                            <p class="nav-search-description">Tambahkan waktu Anda ingin datang</p>
+                                        </div>
+                                        <div class="nav-search-btn">
+                                            <i class="fas fa-search"></i>
+                                            <span>Cari</span>
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="header-search">
+                                        <div class="header-search-heading">Belum tahu mau pergi ke mana? Hebat!</div>
+                                        <a class="header-search-btn"><span class="gradient-text">Pencarian Fleksibel</span></a>
+                                    </div>
+                                    </div>
+                                    </header>
+                                    
+                                    <div class="container">
+                                        <div class="content-wrap" id="recent">
+                                            <h3 class="content-heading">Jelajahi destinasi terdekat</h3>
+                                            <div class="row">
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-01.jpg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Tugu Jogja</h5>
+                                                            <p class="recent-place-description">2 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-02.png" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Malioboro</h5>
+                                                            <p class="recent-place-description">1,5 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-03.png" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Titik 0 KM Jogja</h5>
+                                                            <p class="recent-place-description">7 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-04.jpg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Prawirotaman jogja</h5>
+                                                            <p class="recent-place-description">6,5 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-05.jpg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Keraton Yogyakarta</h5>
+                                                            <p class="recent-place-description">2,5 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-06.jpg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Museum Affandi</h5>
+                                                            <p class="recent-place-description">10 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-07.jpeg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Museum Ullen Sentalu</h5>
+                                                            <p class="recent-place-description">6,5 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-4 c-6">
+                                                    <div class="recent-place-wrap">
+                                                        <img src="./assets/img/recent-08.jpg" alt="" class="recent-place-img">
+                                                        <div class="recent-place-text">
+                                                            <h5 class="recent-place-heading">Taman Sari</h5>
+                                                            <p class="recent-place-description">6,5 jam berkendara</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <h3 class="content-heading">Tempat berlibur bernilai tinggi di Yogyakarta</h3>
+                                            <div class="row">
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="anywhere-wrap">
+                                                        <img src="./assets/img/anywhere-01.png" alt="" class="anywhere-img">
+                                                        <h5 class="anywhere-heading">Resort luar ruangan</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="anywhere-wrap">
+                                                        <img src="./assets/img/anywhere-02.png" alt="" class="anywhere-img">
+                                                        <h5 class="anywhere-heading">Tempat menginap unik</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="anywhere-wrap">
+                                                        <img src="./assets/img/anywhere-03.png" alt="" class="anywhere-img">
+                                                        <h5 class="anywhere-heading">Seluruh rumah</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="anywhere-wrap">
+                                                        <img src="./assets/img/anywhere-04.png" alt="" class="anywhere-img">
+                                                        <h5 class="anywhere-heading">Boleh bawa hewan peliharaan</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <div class="row">
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="poster-wrap">
+                                                        <div class="poster-img" style="background-image: url(./assets/img/poster-01.png);"></div>
+                                                        <div class="poster-text">
+                                                            <h5 class="poster-heading">Destinasi Kuliner</h5>
+                                                            <p class="poster-description">Daftar Favorit yang dikurasi oleh Airbnb.</p>
+                                                            <div>
+                                                                <button class="poster-btn">Dapatkan inspirasi</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <div class="content-text">
+                                                <h3 class="content-heading">Tempat berlibur untuk segala gaya</h3>
+                                                <p class="content-description">Dapatkan ruang yang luasnya tepat untuk Anda.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-4 m-4 c-12">
+                                                    <div class="explore-wrap">
+                                                        <img src="./assets/img/explore-01.png" alt="" class="explore-img">
+                                                        <div class="explore-text">
+                                                            <h5 class="explore-heading">Apartemen</h5>
+                                                            <p class="explore-description">Lokasi strategis dengan perlengkapan sehari-hari.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 m-4 c-12">
+                                                    <div class="explore-wrap">
+                                                        <img src="./assets/img/explore-02.png" alt="" class="explore-img">
+                                                        <div class="explore-text">
+                                                            <h5 class="explore-heading">Vila</h5>
+                                                            <p class="explore-description">Bangunan mewah untuk liburan terbaik.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 m-4 c-12">
+                                                    <div class="explore-wrap">
+                                                        <img src="./assets/img/explore-03.png" alt="" class="explore-img">
+                                                        <div class="explore-text">
+                                                            <h5 class="explore-heading">Rumah</h5>
+                                                            <p class="explore-description">Tempat untuk Anda sendiri, cukup luas untuk semua.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-wrap">
+                                            <div class="row">
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="poster-wrap">
+                                                        <div class="poster-img white" style="background-image: url(./assets/img/poster-02.png);"></div>
+                                                        <div class="poster-text white">
+                                                            <h5 class="poster-heading white">Cobalah menjadi tuan rumah</h5>
+                                                            <p class="poster-description white">Dapatkan relasi tambahan dan temukan peluang baru dengan berbagi tempat Anda berkunjung.</p>
+                                                            <div>
+                                                                <button class="poster-btn white">Pelajari lebih lanjut</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer>
+                                        <div class="row no-gutters">
+                                            <div class="footer-wrap">
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="footer-heading">
+                                                        <span>
+                                                            MEMPERKENALKAN
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="footer-link">
+                                                        Cara kerja Airbnb
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Halaman berita
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Airbnb 2024
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Investor
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        HotelTonight
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Airbnb untuk Kerja
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Berkat Tuan Rumah, segalanya mungkin
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="footer-heading">
+                                                        <span>
+                                                            KOMUNITAS
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="footer-link">
+                                                        Keberagaman dan Kebersamaan
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Fasilitas untuk Penyandang Disabilitas
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Mitra Afiliasi Airbnb
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Tempat Tinggal untuk Garis Depan
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Referensi Tamu
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="footer-heading">
+                                                        <span>
+                                                            MENJADI TUAN RUMAH
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="footer-link">
+                                                        Menyewakan Properti
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Menyelenggarakan Pengalaman Daring
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Menjadi Tuan Rumah yang Bertanggung Jawab
+                                                    </a>
+                                                </div>
+                                                <div class="col l-3 m-6 c-6">
+                                                    <div class="footer-heading">
+                                                        <span>
+                                                            DUKUNGAN
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" class="footer-link">
+                                                        Tindakan Kami terhadap Kenyamanan
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Pusat Bantuan
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Opsi Pembatalan
+                                                    </a>
+                                                    <a href="#" class="footer-link">
+                                                        Kepercayaan dan Keamanan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="copyright-wrap">
+                                                <ul class="copyright-list">
+                                                    <li class="copyright-item-left">
+                                                        @ 2021 Airbnb Inc
+                                                    </li>
+                                                    <li class="copyright-item-left">
+                                                        <span>·</span>
+                                                        <a href="#">
+                                                            Privasi
+                                                        </a>
+                                                        <span>·</span>
+                                                        <a href="#">
+                                                            Ketentuan
+                                                        </a>
+                                                        <span>·</span>
+                                                        <a href="#">
+                                                            Peta
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="copyright-list">
+                                                    <li class="copyright-item-right">
+                                                        <a href="#">
+                                                            <i class="fas fa-globe"></i>
+                                                            Bahasa Indonesia
+                                                        </a>
+                                                    </li>
+                                                    <li class="copyright-item-right">
+                                                        <a class="copyright-item-social" href="https://www.facebook.com/airbnb">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                        <a class="copyright-item-social" href="https://twitter.com/airbnb">
+                                                            <i class="fab fa-twitter"></i>
+                                                        </a>
+                                                        <a class="copyright-item-social" href="https://instagram.com/airbnb">
+                                                            <i class="fab fa-instagram-square"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                    </div>
+                                    
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
+                                                                        
